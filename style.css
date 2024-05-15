@@ -25,20 +25,14 @@
 
 #screen {
    position: absolute;
-   background-color: rgba(255, 255, 255, 0.5); /* Example background color with transparency */
+   /* background-color: rgba(255, 255, 255, 0.5); Example background color with transparency */
 }
 
 #buttons {
    position: absolute;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
 }
 
-#buttons div {
-   width: 20%; /* Adjust as needed */
-   background-color: rgba(0, 0, 0, 0.5); /* Example background color with transparency */
-}
+
 
 #fullscreen-button {
    /* beautiful button */
@@ -52,10 +46,9 @@
     padding: 10px 24px;
     border: none;
     cursor: pointer;
-    
+
 }
 
-
-.hidden {
-    display: none;
+#fullscreen-button:hover {
+    background-color: #45a049;
 }
