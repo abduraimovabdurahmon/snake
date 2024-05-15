@@ -186,6 +186,10 @@ const arrowUp = document.getElementById("arrow-up");
 const arrowDown = document.getElementById("arrow-down");
 const arrowLeft = document.getElementById("arrow-left");
 const arrowRight = document.getElementById("arrow-right");
+const num2 = document.getElementById("num2");
+const num4 = document.getElementById("num4");
+const num6 = document.getElementById("num6");
+const num8 = document.getElementById("num8");
 
 arrowUp.addEventListener("click", () => {
   if (direction !== DIRECTION.DOWN) direction = DIRECTION.UP;
@@ -198,6 +202,19 @@ arrowLeft.addEventListener("click", () => {
 });
 arrowRight.addEventListener("click", () => {
   if (direction !== DIRECTION.LEFT) direction = DIRECTION.RIGHT;
+});
+
+num2.addEventListener("click", () => {
+  if (direction !== DIRECTION.DOWN) direction = DIRECTION.UP;
+});
+num4.addEventListener("click", () => {
+  if (direction !== DIRECTION.RIGHT) direction = DIRECTION.LEFT;
+});
+num6.addEventListener("click", () => {
+  if (direction !== DIRECTION.LEFT) direction = DIRECTION.RIGHT;
+});
+num8.addEventListener("click", () => {
+  if (direction !== DIRECTION.UP) direction = DIRECTION.DOWN;
 });
 
 // Start the game

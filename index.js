@@ -286,28 +286,6 @@ function adjustElements() {
     hash.style.borderRadius = "10px";
 
 
-
-    // click sound
-    const audio = new Audio();
-    audio.src = "./public/sounds/click.mp3";
-
-    // menu click
-    const allButtons = [
-        menu, arrowUp, arrowDown, arrowLeft, arrowRight, back, call, exit, num1, num2, num3, num4, num5, num6, num7, num8, num9, star, num0, hash
-    ];
-    
-    allButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            audio.play();
-        });
-    });
-
-    allButtons.forEach(button => {
-        button.addEventListener("dblclick", () => {
-            audio.play();
-        });
-    });
-
 }
 
 adjustElements();
